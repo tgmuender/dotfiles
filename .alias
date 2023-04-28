@@ -1,0 +1,24 @@
+# Contains global aliases usable for all sorts of projects
+
+APP_ROOT="$HOME/apps"
+alias j17='export JAVA_HOME="$APP_ROOT/java17"'
+alias j13='export JAVA_HOME="$APP_ROOT/java13"'
+alias j11='export JAVA_HOME="$APP_ROOT/java11"'
+alias j8='export JAVA_HOME="$APP_ROOT/java8'
+alias j7='export JAVA_HOME="$APP_ROOT/java7'
+
+alias swagger='firefox localhost:8888 ; docker run --rm -p 8888:8080 swaggerapi/swagger-editor'
+
+alias phone='flatpak run com.belledonnecommunications.linphone/x86_64/4.1.1'
+
+alias ll='ls -lFh'
+
+alias mci='mvn clean install'
+alias gw='./gradlew'
+
+alias k='kubectl'
+alias dkc='docker-compose'
+alias mk='minikube'
+alias tf='terraform'
+alias dotfiles='git --git-dir=${HOME}/.dotfiles/.git --work-tree=${HOME}'
+
