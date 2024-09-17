@@ -1,7 +1,8 @@
 # Contains global aliases usable for all sorts of projects
 
 APP_ROOT="$HOME/apps"
-alias j17='export JAVA_HOME="$APP_ROOT/java17"'
+alias j21='export JAVA_HOME="$APP_ROOT/java21" && export PATH="${JAVA_HOME}/bin:${PATH}"'
+alias j17='export JAVA_HOME="$APP_ROOT/java17" && export PATH="${JAVA_HOME}/bin:${PATH}"'
 alias j13='export JAVA_HOME="$APP_ROOT/java13"'
 alias j11='export JAVA_HOME="$APP_ROOT/java11"'
 alias j8='export JAVA_HOME="$APP_ROOT/java8"'
@@ -18,10 +19,11 @@ alias gw='./gradlew'
 
 alias k='kubectl'
 alias dkc='docker-compose'
+alias docker-compose='docker compose'
 alias mk='minikube'
 alias tf='terraform'
 alias tp='telepresence'
 alias dotfiles='git --git-dir=${HOME}/.dotfiles/.git --work-tree=${HOME}'
 
 alias goarch='cd target/test-classes/projects/it-basic/project/portal1'
-
+alias b64cert='base64 -d - | openssl x509 -text -noout'
